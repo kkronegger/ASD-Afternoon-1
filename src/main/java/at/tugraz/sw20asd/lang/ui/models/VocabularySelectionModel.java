@@ -21,9 +21,9 @@ public class VocabularySelectionModel {
 
         vsm.setVocabularyId(v.getId());
         vsm.setVocabularyName(v.getName());
-        vsm.setVocabularySrc(v.getSourceLanguage().toString().toUpperCase() + " - " + v.getTargetLanguage().toString().toUpperCase());
+        vsm.setVocabularySrc(v.getSourceLanguage().toString());
         vsm.setVocabularyTarget(v.getTargetLanguage().toString());
-        vsm.setVocabularyTranslation(v.getSourceLanguage().toString());
+        vsm.setVocabularyTranslation(v.getSourceLanguage().toString().toUpperCase() + " - " + v.getTargetLanguage().toString().toUpperCase());
 
         vsm.setSelected(false);
 
