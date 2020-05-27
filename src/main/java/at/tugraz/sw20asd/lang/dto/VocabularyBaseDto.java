@@ -24,6 +24,18 @@ public class VocabularyBaseDto {
         _targetLanguage = dst;
     }
 
+    public String getTranslation() {
+        return _sourceLanguage.toString().toUpperCase() + " - " + _targetLanguage.toString().toUpperCase();
+    }
+
+    public String getTranslationSrc() {
+        return _sourceLanguage.toString().toUpperCase();
+    }
+
+    public String getTranslationTarget() {
+        return _targetLanguage.toString().toUpperCase();
+    }
+
     public Long getId() {
         return _id;
     }
