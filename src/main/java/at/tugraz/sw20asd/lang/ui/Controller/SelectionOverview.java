@@ -131,12 +131,12 @@ public class SelectionOverview extends VBox {
                     });
                 } else {
 
-                    possibleItems = (FXCollections.observableArrayList(
+                    possibleItems = FXCollections.observableArrayList(
                             Vocabularies
                                     .stream()
                                     .map(VocabularySelectionModel::fromDto)
                                     .collect(Collectors.toList())
-                    ));
+                    );
                     //needed for selection
                     getCurrentIndexMap();
 
